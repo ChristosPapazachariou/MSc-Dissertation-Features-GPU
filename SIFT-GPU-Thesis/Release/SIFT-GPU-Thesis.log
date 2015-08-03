@@ -1,0 +1,28 @@
+﻿Build started 02-Jun-15 4:42:59 PM.
+     1>Project "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\SIFT-GPU-Thesis.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\Release\".
+       InitializeBuildStatus:
+         Creating "Release\SIFT-GPU-Thesis.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\GPUbuildOB.cu" 
+       CudaBuild:
+         Compiling CUDA source file GPUbuildOB.cu...
+         cmd.exe /C "C:\Users\sleazy tek\AppData\Local\Temp\tmp3896d499524e44a3a8c837e7a7806f60.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\GPUbuildOB.cu.obj "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\GPUbuildOB.cu"
+         
+         C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\GPUbuildOB.cu.obj "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\GPUbuildOB.cu" 
+     1>C:/Users/sleazy tek/Documents/Visual Studio 2010/Projects/SIFT-GPU-Thesis/SIFT-GPU-Thesis/GPUbuildOB.cu(11): error : linkage specification is incompatible with previous "GPUdownsample"
+         c:\users\sleazy tek\documents\visual studio 2010\projects\sift-gpu-thesis\sift-gpu-thesis\gpusift.h(12): here
+         
+     1>C:/Users/sleazy tek/Documents/Visual Studio 2010/Projects/SIFT-GPU-Thesis/SIFT-GPU-Thesis/GPUbuildOB.cu(38): error : linkage specification is incompatible with previous "GPUbuildOB"
+         c:\users\sleazy tek\documents\visual studio 2010\projects\sift-gpu-thesis\sift-gpu-thesis\gpusift.h(18): here
+         
+         2 errors detected in the compilation of "C:/Users/SLEAZY~1/AppData/Local/Temp/tmpxft_000018a0_00000000-5_GPUbuildOB.cpp1.ii".
+         GPUbuildOB.cu
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\CUDA 6.5.targets(593,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\GPUbuildOB.cu.obj "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\GPUbuildOB.cu"" exited with code 2.
+     1>Done Building Project "C:\Users\sleazy tek\Documents\Visual Studio 2010\Projects\SIFT-GPU-Thesis\SIFT-GPU-Thesis\SIFT-GPU-Thesis.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.48
